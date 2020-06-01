@@ -62,7 +62,7 @@ async def chat_invite_user(msg: types.Message, _):
     sent_message_count = 0
     while True:
         try:
-            keyboard = Keyboard(one_time=False)
+            keyboard = Keyboard(one_time=True)
             for row in range(0, 10):
                 button_colors = deque(
                     [
