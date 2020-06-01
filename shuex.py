@@ -101,4 +101,4 @@ async def run():
 
 if __name__ == "__main__":
     task_manager.add_task(run)
-    task_manager.run(auto_reload=False)
+    task_manager.run(auto_reload=True)
