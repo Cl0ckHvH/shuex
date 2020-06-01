@@ -47,7 +47,7 @@ async def apply_required_settings(group_id: int):
             "group_id": group_id,
             "messages": 1,
             "bots_capabilities": 1,
-            "bots_add_to_chat": 0,
+            "bots_add_to_chat": 1,
         },
     )
     await vk.api_request(
