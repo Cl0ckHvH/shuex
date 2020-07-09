@@ -1,2 +1,2 @@
-vk.py==11.8.0
+vk_api
 toml
