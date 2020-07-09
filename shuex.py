@@ -72,7 +72,6 @@ async def echo_message(msg: types.Message, _):
                         ButtonColor.PRIMARY,
                     ]
                 )
-                button_colors.rotate(sent_message_count % len(button_colors))
                 for button in range(0, 4):
                     keyboard.add_text_button(
                         config["buttons_text"], color=button_colors[button]
