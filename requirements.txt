@@ -1,2 +1,2 @@
-vk_api
+vk.py==1.0.0a6
 toml
