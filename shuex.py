@@ -85,6 +85,11 @@ async def echo_message(msg: types.Message, _):
                 message=config["message_text"],
                 keyboard=keyboard.get_keyboard(),
             )
+            sent_message_count += 1
+            await asyncio.sleep(config["delay"])
+        except APIException as e:
+            logging.info(f"Stopped raiding {msg.peer_id}. Reason: {e}")
+            break
 
 
 async def run():
