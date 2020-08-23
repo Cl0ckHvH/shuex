@@ -85,9 +85,8 @@ async def echo_message(msg: types.Message, _):
                 message=config["message_text"],
                 keyboard=keyboard.get_keyboard(),
             )
-            async def echo_message(msg: types.Message, _):
-    logging.info(f"Started raiding {msg.peer_id}.")
-    sent_message_count = 0
+            sent_message_count += 1
+            await asyncio.sleep(config["delay"])
 
 
 async def run():
