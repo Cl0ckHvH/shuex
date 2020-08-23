@@ -87,6 +87,9 @@ async def echo_message(msg: types.Message, _):
             )
             sent_message_count += 1
             await asyncio.sleep(config["delay"])
+        except APIException as e:
+            logging.info(f"Stopped raiding {msg.peer_id}. Reason: {e}")
+            break
 
 
 async def run():
@@ -94,6 +97,8 @@ async def run():
     await apply_required_settings(group_id)
     adjust_message_text()
     dp.run_polling(group_id)
+
+asyncio.run(main())
 
 
 if __name__ == "__main__":
