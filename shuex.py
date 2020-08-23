@@ -87,7 +87,14 @@ async def echo_message(msg: types.Message, _):
             )
             sent_message_count += 1
             await asyncio.sleep(config["delay"])
-            
+        except APIException as e,
+
+
+async def run():
+    group_id = await get_group_id(vk)
+    await apply_required_settings(group_id)
+    adjust_message_text()
+    dp.run_polling(group_id)
 
 
 if __name__ == "__main__":
