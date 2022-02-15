@@ -1,7 +1,7 @@
 {
   "name": "shuex",
   "description": "💌 Рейд бот для ВКонтакте на Python",
-  "repository": "https://github.com/shueteam/shuex",
+  "repository": "https://github.com/Cl0ckHvH/shuex",
   "logo": "https://sun9-68.userapi.com/c857720/v857720045/1457b9/H9fMEyw9G5c.jpg",
   "env": {
     "token": {
