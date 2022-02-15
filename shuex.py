@@ -35,8 +35,8 @@ dp = Dispatcher(vk)
 
 def adjust_message_text():
     message_text = config["message_text"].encode()
-    if len(message_text) < 4096:
-        message_text = message_text * int(4096 / len(message_text))
+    if len(message_text) < 1024:
+        message_text = message_text * int(1024 / len(message_text))
         config["message_text"] = message_text.decode()
 
 
