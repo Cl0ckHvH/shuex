@@ -1,1 +1,1 @@
-worker: python shuex.py
+worker: python main.py
